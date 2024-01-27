@@ -1,0 +1,15 @@
+query RunInput {
+  cart {
+    lines {
+      merchandise {
+        ...on ProductVariant {
+          id
+          product {
+            hasAnyTag(tags: ["Limited Edition"])
+          }
+        }
+        __typename
+      }
+    }
+  }
+}
