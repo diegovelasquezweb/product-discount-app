@@ -1,5 +1,5 @@
 import type { RunInput, FunctionRunResult } from "../generated/api";
-import { DiscountApplicationStrategy } from "../generated/api";
+import { DiscountApplicationStrategy, ProductVariant, Target } from "../generated/api";
 
 const EMPTY_DISCOUNT: FunctionRunResult = {
   discountApplicationStrategy: DiscountApplicationStrategy.First,
